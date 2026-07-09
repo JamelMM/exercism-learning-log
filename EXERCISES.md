@@ -20,6 +20,7 @@ This file tracks my completed Exercism C# exercises and the main concept practic
 | 12 | Logs, Logs, Logs | Enums, string parsing, and switch statements | Extract a code from text and map it to a typed enum value |
 | 13 | Face ID 2.0 | Equality, hash codes, and reference comparison | Override Equals/GetHashCode for value equality and use ReferenceEquals for object identity |
 | 14 | Simple Calculator | Exceptions and input validation | Validate inputs first, then execute the requested operation |
+| 15 | The Weather in Deather | Expression-bodied members, ternary conditionals, switch expressions, and throw expressions | Map object state to enum results using compact rule-based expressions |
 
 ## Learning Patterns
 
@@ -181,6 +182,21 @@ Key ideas:
 - `ArgumentException` for an invalid general argument
 - `ArgumentOutOfRangeException` for unsupported values
 - guard conditions keep the main logic easier to follow
+
+### Compact rule-based logic
+
+Practiced in:
+- The Weather in Deather
+
+Pattern:
+When object state maps to a specific result, use expression-bodied members, ternary conditionals, switch expressions, or throw expressions to keep the rule close to the value it returns.
+
+Key ideas:
+- use expression-bodied members for simple methods and properties
+- use ternary conditionals for small two-way decisions
+- use switch expressions for multiple related outcomes
+- use tuple patterns when a decision depends on more than one value
+- use `_` as a wildcard pattern for values that do not matter
 
 ## Notes
 
